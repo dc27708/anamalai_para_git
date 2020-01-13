@@ -1,5 +1,5 @@
 ######################################################################################
-############## Host-Parasite distribution and networks- Anamalai Data ################
+############## Host-Parasite distribution and networks ################
 ######################################################################################
 # load package
 library("vegan")
@@ -17,8 +17,6 @@ setwd("C:/Users/DELL/Dropbox (Personal)/anamalais.data/data analysis")
 # Read data into R
 p_data <- read.csv("data_parasites.csv",row.names=1, na.strings=c(""," ","-9", "-99","NA")) #Loading data
 p_data <- p_data[,-11] #Removing grey junglefowl data
-
-
 
 #decostand(x,"pa") counts presence/absence
 p_data1 <- (decostand(p_data,"pa"))
